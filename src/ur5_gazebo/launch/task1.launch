@@ -1,0 +1,10 @@
+<launch>
+    <include file="$(find ur_gazebo)/launch/ur5_bringup.launch" />
+     <node pkg="ur5_gazebo" type="sin_wave.py" name="sin_wave" output="screen">
+        <param name="amplitudes" value="[1.0, 0.5, 1.5, 1.0, 1.0, 1.0]" />
+        <param name="frequency" value="0.5" />  
+     </node>
+    <!--<node pkg="ur5_gazebo" type="ur5_joint_anlges.py" name="sin_wave" output="screen"></node> -->
+
+</launch>
+
